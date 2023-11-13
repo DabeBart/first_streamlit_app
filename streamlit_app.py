@@ -42,7 +42,7 @@ fruit_choice_normalized = pandas.json_normalize(fruit_choice_response.json())
 import pandas
 #streamlit.text(fruityviceresponse.jason())
 #streamlit.dataframe(fruityvice_normalized)
-streamlit.text(fruit_choice_response.jason())
+streamlit.text(fruit_choice_normalized.jason())
 streamlit.dataframe(fruit_choice_normalized)
 
 
