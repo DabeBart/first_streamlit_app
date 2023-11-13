@@ -39,6 +39,7 @@ fruit_choice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit
 
 
 #output it the screen as a table
+import pandas
 #streamlit.text(fruityviceresponse.jason())
 #streamlit.dataframe(fruityvice_normalized)
 streamlit.dataframe(fruit_choice_response)
