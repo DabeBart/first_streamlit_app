@@ -36,11 +36,11 @@ streamlit.write('The user entered ', fruit_choice)
 
 import requests
 fruit_choice_response = requests.get('https://fruityvice.com/api/fruit/' + fruit_choice)
-fruit_choice_normalized = andas.json_normalize(fruit_choice_response.json())  # added to normalized the data
+
 
 #output it the screen as a table
 #streamlit.text(fruityviceresponse.jason())
 #streamlit.dataframe(fruityvice_normalized)
-streamlit.dataframe(fruit_choice_normalized)
+streamlit.dataframe(fruit_choice_response)
 
 
