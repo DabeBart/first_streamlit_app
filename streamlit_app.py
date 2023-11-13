@@ -22,11 +22,15 @@ streamlit.header(':banana: :strawberry: Build Your Own Fruit Smoothie 	:kiwifrui
 #fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
-#streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(my_fruit_list)
 
 
 streamlit.header('Fruityvice Fruit Advice!')
 import requests
-fruityvice_response = requests.get('https://fruityvice.com/api/fruit/watermelon')
-streamlit.text(fruityvice_response.jason())
+fruityvice_response = requests.get('https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#output it the screen as a table
+#streamlit.text(fruityvice_response.jason())
+streamlit.dataframe(fruityvice_normalized)
+
 
