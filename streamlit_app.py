@@ -27,7 +27,7 @@ streamlit.header(':banana: :strawberry: Build Your Own Fruit Smoothie 	:kiwifrui
 
 streamlit.header('Fruityvice Fruit Advice!')
 import requests
-fruityvice_response = requests.get('https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_response = requests.get('https://fruityvice.com/api/fruit/" + "kiwi"')
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
 #streamlit.text(fruityvice_response.jason())
