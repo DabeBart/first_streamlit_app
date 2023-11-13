@@ -6,7 +6,7 @@ streamlit.header(':bowl_with_spoon: Breakfast Menu')
 streamlit.text('Omega 3 & Blueberry Oatmeal')
 streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard-Boiled Free-Range Egg')
-streamlit.text(':avocado: Avocado Toast')
+streamlit.text('Avocado Toast')
 
 streamlit.header(':banana: :strawberry: Build Your Own Fruit Smoothie 	:kiwifruit: :grapes:')
 
@@ -30,7 +30,7 @@ import requests
 fruityvice_response = requests.get('https://fruityvice.com/api/fruit/watermelon')
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
-#streamlit.text(fruityvice_response.jason())
+#streamlit.text(fruityviceresponse.jason())
 streamlit.dataframe(fruityvice_normalized)
 
 
