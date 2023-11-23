@@ -62,17 +62,7 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)'''
 
-# don't run anything here while we troubleshoot
-streamlit.stop()
-import snowflake.connector
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("SELECT * from fruit_load_list")
-my_data_rows = my_cur.fetchall()
-streamlit.header("fruit load list contains:")
-streamlit.dataframe(my_data_rows)
-fruit_choice1 = streamlit.text_input('What fruit would you like to add? ','jackfruit')
-streamlit.write('Thanks for Adding ', fruit_choice1)    
+
 
 # this will not work correctly, but just go with it for the now
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
@@ -97,5 +87,15 @@ if streamlit.button ('Get Fruit List');
   my_cnx.close()
   streamlit.dataframe(my_data_rows)
 
-
+# don't run anything here while we troubleshoot
+streamlit.stop()
+import snowflake.connector
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cur = my_cnx.cursor()
+my_cur.execute("SELECT * from fruit_load_list")
+my_data_rows = my_cur.fetchall()
+streamlit.header("fruit load list contains:")
+streamlit.dataframe(my_data_rows)
+fruit_choice1 = streamlit.text_input('What fruit would you like to add? ','jackfruit')
+streamlit.write('Thanks for Adding ', fruit_choice1)    
 
