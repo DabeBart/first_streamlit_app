@@ -1,6 +1,6 @@
-import streamlit
+#/import streamlit
 
-streamlit.title('My Parents New Healthy Diner')
+#streamlit.title('My Parents New Healthy Diner')
 
 streamlit.header(':bowl_with_spoon: Breakfast Menu')
 streamlit.text('Omega 3 & Blueberry Oatmeal')
@@ -42,11 +42,12 @@ import pandas
 #streamlit.text(fruityviceresponse.jason())
 #streamlit.dataframe(fruityvice_normalized)
 streamlit.text(fruit_choice_response.json())
-streamlit.dataframe(fruit_choice_response)
+streamlit.dataframe(fruit_choice_response)#/
 
 
 ######
 
+import streamlit
 use role pc_rivery_role;
 use warehouse pc_rivery_wh;
 
