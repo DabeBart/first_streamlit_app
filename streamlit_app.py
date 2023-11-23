@@ -45,6 +45,6 @@ streamlit.text(fruit_choice_response.json())
 streamlit.dataframe(fruit_choice_response)
 
 
-Import Snowflake.connector
+import Snowflake.connector
 
 
