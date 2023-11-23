@@ -1,4 +1,4 @@
-#/import streamlit
+'''import streamlit
 
 streamlit.title('My Parents New Healthy Diner')
 
@@ -42,7 +42,7 @@ import pandas
 #streamlit.text(fruityviceresponse.jason())
 #streamlit.dataframe(fruityvice_normalized)
 streamlit.text(fruit_choice_response.json())
-streamlit.dataframe(fruit_choice_response)#/
+streamlit.dataframe(fruit_choice_response)'''
 
 
 ######
