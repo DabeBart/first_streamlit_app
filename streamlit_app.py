@@ -75,7 +75,7 @@ fruit_choice1 = streamlit.text_input('What fruit would you like to add? ','jackf
 streamlit.write('Thanks for Adding ', fruit_choice1)    
 
 # this will not work correctly, but just go with it for the now
-my_cur.execute("insert into fruit_load_list values ('from streamlit')')
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 '''#streamlit.text("fruit load list contains:")
 #streamlit.text(my_data_row)
